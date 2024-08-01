@@ -2,28 +2,12 @@
   "name": "playwright-poc",
   "version": "0.0.0",
   "scripts": {
-    "setup": "export $(cat .env | xargs)",
-    "test": "playwright test",
-    "test:report": "playwright test --reporter=html",
-    "api": "playwright test api",
-    "e2e": "playwright test e2e",
-    "e2e:debug": "playwright test e2e --headed"
+    "format": "prettier --write .",
+    "start": "node index.js"
   },
   "private": true,
   "dependencies": {
-    "@playwright/test": "1.25",
-    "@types/jasmine": "~3.5.0",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
-    "aws-sdk": "^2.1651.0",
-    "dotenv": "^16.4.5",
-    "playwright": "1.25",
     "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "~3.9.5"
+    "puppeteer": "^22.15.0"
   }
 }
